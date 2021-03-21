@@ -14,12 +14,23 @@ int main()
     Assassin* assassin = new Assassin();
     int joueurAttaque;
     bool choixRoleValide = false;
-    //Titre du jeux
-    std::cout << "Jeux RPG\n";
 
-    //Le joueur choisi le role
-    std::cout << "Veuillez choisir un joueur parmi les choisis suivants:\n1)Guerrier\n2)Magicien\n3) Assassin\n";
-    std::cin >> choixRole;
+    while (choixRoleValide == false)
+    {
+        //Titre du jeux
+        std::cout << "Jeux RPG\n";
+        //Le joueur choisi le role
+        std::cout << "Veuillez choisir un joueur parmi les choisis suivants:\n1) Guerrier\n2) Magicien\n3) Assassin\n";
+        std::cin >> choixRole;
+        if (choixRole == 1 || choixRole == 2 || choixRole == 3)
+        {
+            choixRoleValide = true;
+        }
+        else
+        {
+            system("CLS");
+        }
+    }
     /*while (choixRoleValide == false)
     {
         if (choixRole == 1)
