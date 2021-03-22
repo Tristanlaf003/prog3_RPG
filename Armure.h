@@ -1,13 +1,15 @@
-#pragma once
-#include <iostream>
+#ifndef ARMURE_DEF
+#define ARMURE_DEF
 #include "Equipement.h"
-class Armure: public Equipement
+
+class Armure :
+    public Equipement
 {
 private:
-	int m_coefdefense;
+    int m_coefDefense;
 public:
-	Armure(int coefdefense, std::string nom, float valeur, float drop);
-	// Hérité via Equipement
-	virtual int getDrop() override;
+    Armure(std::string nom, float valeur, float drop, constantes::TypeJoueur user, constantes::Rarete rarete, int coefDefense);
+    int getCoefDefense();
 };
+#endif
 

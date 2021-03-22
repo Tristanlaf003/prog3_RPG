@@ -150,18 +150,21 @@
     <ClCompile Include="Magicien.cpp" />
     <ClCompile Include="Role.cpp" />
     <ClCompile Include="RPG.cpp" />
+    <ClCompile Include="Utiliter.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Acteur.h" />
     <ClInclude Include="Arme.h" />
     <ClInclude Include="Armure.h" />
     <ClInclude Include="Assassin.h" />
+    <ClInclude Include="Constantes.h" />
     <ClInclude Include="Ennemis.h" />
     <ClInclude Include="Equipement.h" />
     <ClInclude Include="Guerrier.h" />
     <ClInclude Include="Joueur.h" />
     <ClInclude Include="Magicien.h" />
     <ClInclude Include="Role.h" />
+    <ClInclude Include="Utiliter.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

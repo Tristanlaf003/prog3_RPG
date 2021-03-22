@@ -38,9 +38,8 @@ int main()
 
     //Génération des armes pour l'ennemi
     //Plage(min-max) dommage , nom, valeur($$$), top de drop(%)
-    Arme arme(2, "AK42",1232,22);
-    Arme arme2(2, "mfeoik", 4552, 10);
-
+    Arme arme("Hache", 22, 2, constantes::TypeJoueur::Guerrier, constantes::Rarete::commun, 1, 2);
+    Arme arme2("FireBall", 22, 2, constantes::TypeJoueur::Magicien, constantes::Rarete::epique, 1, 2);
     //Niveau 1
     Ennemis* tabEnnemis[2]{};
 

@@ -1,11 +1,11 @@
 #include "Armure.h"
 
-Armure::Armure(int coefdefense, std::string nom, float valeur, float drop) : Equipement(nom,valeur,drop)
+Armure::Armure(std::string nom, float valeur, float drop, constantes::TypeJoueur user, constantes::Rarete rarete, int coefDefense) :
+    Equipement(nom, valeur, drop, user, rarete), m_coefDefense{ coefDefense }{}
+
+
+int Armure::getCoefDefense()
 {
-	m_coefdefense = coefdefense;
+    return m_coefDefense;
 }
 
-int Armure::getDrop()
-{
-	return 0;
-}
