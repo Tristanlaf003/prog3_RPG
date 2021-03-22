@@ -31,25 +31,7 @@ int main()
             system("CLS");
         }
     }
-    /*while (choixRoleValide == false)
-    {
-        if (choixRole == 1)
-        {
-            guerrier = new Guerrier();
-            choixRoleValide = true;
-        }
-        else if (choixRole == 2)
-        {
-            magicien = new Magicien();
-            choixRoleValide = true;
-        }
-        else if (choixRole == 3)
-        {
-            assassin = new Assassin();
-            choixRoleValide = true;
-        }
-    }*/
-
+    
     //Inventaire: Changer le paramètre item pour Equipement, car le joueur peut avoir juste des équipements.
     //Création d'arme et d'armue pour le joueur
 
@@ -60,7 +42,7 @@ int main()
     Arme arme2(2, "mfeoik", 4552, 10);
 
     //Niveau 1
-    Ennemis* tabEnnemis[2];
+    Ennemis* tabEnnemis[2]{};
 
     //Mettre les ennemis dans un tableau + création d'ennemis
     //Arme, dommage de base
@@ -96,7 +78,7 @@ int main()
     {
         int choix;
         //Le joueur choisi le type d'attaque contre l'ennemi
-        std::cout << "\n1)Heal\n2)Thunder\n3) Fireball";
+        std::cout << "\n1) Heal\n2) Thunder\n3) Fireball";
         std::cin >> choix;
         if (choix == 1)
         {
@@ -125,8 +107,8 @@ int main()
     }
 
 
-    //delete guerrier;
-    //delete magicien;
-    //delete assassin;
+    delete guerrier;
+    delete magicien;
+    delete assassin;
 }
 

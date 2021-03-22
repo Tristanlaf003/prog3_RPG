@@ -8,7 +8,7 @@ Acteur::Acteur(std::string nom,int niveau, int xp, int hp_max, int hp)
     m_hp = hp;
 }
 
-void Acteur::Attack(Acteur* acteur)
+void Acteur::Agir(Acteur* acteur)
 {
 }
 
