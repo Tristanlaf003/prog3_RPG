@@ -13,7 +13,7 @@ private:
 	Armure* m_armure;
 public:
 	Joueur(Role* role, Arme* arme, Armure* armure, std::string nom, int niveau, int xp, int hp_max, int hp);
-	void attack(Acteur* acteur);
+	void Agir(Acteur* acteur);
 	int recevoirDegat(int degat);
 	int recevoirXp(int xp);
 	int getCoDefense();

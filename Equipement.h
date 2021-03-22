@@ -5,7 +5,7 @@
 #include"Constantes.h"
 #include<iostream>
 #include<list>
-
+#include <string>
 
 class Equipement
 {
@@ -18,10 +18,7 @@ protected:
 	constantes::Rarete m_rarete;
 public:
 	virtual float getDrop();
+	virtual constantes::TypeJoueur getTypeJoueur();
 };
 
 #endif 
-
-
-
-

@@ -12,3 +12,8 @@ float Equipement::getDrop()
 {
 	return m_drop;
 }
+
+constantes::TypeJoueur Equipement::getTypeJoueur()
+{
+	return m_user;
+}

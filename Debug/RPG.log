@@ -1,4 +1,15 @@
-﻿  RPG.cpp
-  Utiliter.cpp
+﻿  Arme.cpp
+C:\Users\Tristan\source\repos\RPG\Arme.cpp(7,10): warning C4552: '*' : résultat de l'expression non utilisé
+C:\Users\Tristan\source\repos\RPG\Arme.cpp(8,10): warning C4552: '*' : résultat de l'expression non utilisé
+C:\Users\Tristan\source\repos\RPG\Arme.cpp(18,13): warning C4305: 'return' : troncation de 'double' à 'float'
+C:\Users\Tristan\source\repos\RPG\Arme.cpp(20,13): warning C4305: 'return' : troncation de 'double' à 'float'
+C:\Users\Tristan\source\repos\RPG\Arme.cpp(29,44): warning C4244: 'argument' : conversion de 'float' en 'int', perte possible de données
+C:\Users\Tristan\source\repos\RPG\Arme.cpp(29,32): warning C4244: 'argument' : conversion de 'float' en 'int', perte possible de données
+  Armure.cpp
+  Ennemis.cpp
+  Equipement.cpp
+  Joueur.cpp
+  RPG.cpp
   Génération de code en cours...
+C:\Users\Tristan\source\repos\RPG\Arme.cpp(24): warning C4715: 'Arme::ModifierPlage' : les chemins de contrôle ne retournent pas tous une valeur
   RPG.vcxproj -> C:\Users\Tristan\source\repos\RPG\Debug\RPG.exe

@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 #include "Guerrier.h"
 #include "Assassin.h"
 #include "Magicien.h"
@@ -40,6 +41,7 @@ int main()
     //Plage(min-max) dommage , nom, valeur($$$), top de drop(%)
     Arme arme("Hache", 22, 2, constantes::TypeJoueur::Guerrier, constantes::Rarete::commun, 1, 2);
     Arme arme2("FireBall", 22, 2, constantes::TypeJoueur::Magicien, constantes::Rarete::epique, 1, 2);
+ 
     //Niveau 1
     Ennemis* tabEnnemis[2]{};
 
@@ -104,7 +106,7 @@ int main()
             tabEnnemis[joueurAttaque - 1]->RecevoirDegat(assassin->Execute());
         }
     }
-
+    
 
     delete guerrier;
     delete magicien;

@@ -7,7 +7,7 @@ Joueur::Joueur(Role* role, Arme* arme, Armure* armure, std::string nom, int nive
 	m_armure = armure;
 }
 
-void Joueur::attack(Acteur* acteur)
+void Joueur::Agir(Acteur* acteur)
 {
 }
 
